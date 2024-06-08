@@ -63,8 +63,6 @@ class ImageGeneratorApp:
         self.btn_toggle_record.grid(row=2, column=0, padx=10, pady=10, columnspan=4)
 
     def load_model(self):
-        # Loads the SD model, make sure you've installed diffusers and transformers
-        # and logged in with `huggingface-cli login` if needed
         self.pipe = AutoPipelineForImage2Image.from_pretrained("stabilityai/sdxl-turbo", torch_dtype=torch.float16, variant="fp16")
         self.pipe.to("cuda")
 
