@@ -59,7 +59,7 @@ class ImageGeneratorApp:
         self.seed_slider.set(42)  # Set default
         self.seed_slider.grid(row=1, column=3, padx=5, pady=5, sticky="ew")
 
-        self.btn_toggle_record = ttk.Button(self.controls_frame, text="Toggle Recording", command=self.toggle_recording, width=20, style='W.TButton')
+        self.btn_toggle_record = ttk.Button(self.controls_frame, text="Toggle Generation", command=self.toggle_recording, width=20, style='W.TButton')
         self.btn_toggle_record.grid(row=2, column=0, padx=10, pady=10, columnspan=4)
 
     def load_model(self):
@@ -70,10 +70,10 @@ class ImageGeneratorApp:
         # Toggles between recording and not recording states
         self.recording = not self.recording
         if self.recording:
-            print("Recording started...")
+            print("Generation started...")
             self.generate_images()
         else:
-            print("Recording stopped.")
+            print("Generation stopped.")
 
     def generate_images(self):
         if self.recording:
