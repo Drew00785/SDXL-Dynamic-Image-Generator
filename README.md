@@ -1,4 +1,4 @@
-Creates imagery based on your text 
+Creates interpolating imagery based on your text 
 
 https://github.com/user-attachments/assets/dc2efd91-7513-4fd9-a00f-d3450c9f2114
 
